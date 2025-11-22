@@ -9,7 +9,7 @@ import Bookings from './pages/Bookings';
 import Blogs from './pages/Blogs';
 import Error from './pages/Error';
 import toast, { Toaster } from 'react-hot-toast';
-
+import './App.css';
 function App() {
   return (
     <Router>
