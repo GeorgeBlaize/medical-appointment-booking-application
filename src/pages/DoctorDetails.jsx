@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import doctorsData from '../data/doctors.json'; // Direct import
 import toast from 'react-hot-toast';
 
 export default function DoctorDetails() {
@@ -8,25 +9,24 @@ export default function DoctorDetails() {
   const [doctor, setDoctor] = useState(null);
   const [bookings, setBookings] = useState([]);
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-  const availableToday = doctor?.availability.includes(today);
 
   useEffect(() => {
-    fetch('/data/doctors.json')
-      .then(res => res.json())
-      .then(data => {
-        const found = data.find(d => d.id === parseInt(id));
-        if (found) {
-          setDoctor(found);
-          document.title = found.name;
-        } else {
-          toast.error('Doctor not found');
-          navigate('/error');
-        }
-      });
+    const found = doctorsData.find(d => d.id === parseInt(id));
+    if (found) {
+      setDoctor(found);
+      document.title = found.name;
+    } else {
+      toast.error('Doctor not found');
+      navigate('/error');
+    }
 
     const stored = JSON.parse(localStorage.getItem('bookings')) || [];
     setBookings(stored);
   }, [id, navigate]);
+
+  if (!doctor) return <div className="text-center p-4">Loading...</div>;
+
+  const availableToday = doctor.availability.includes(today);
 
   const handleBook = () => {
     if (!availableToday) {
@@ -43,8 +43,6 @@ export default function DoctorDetails() {
     toast.success(`Booked with ${doctor.name}`);
     navigate('/my-bookings');
   };
-
-  if (!doctor) return <div>Loading...</div>;
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">

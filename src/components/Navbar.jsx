@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md p-4 flex justify-between items-center">
       <Link to="/" className="flex items-center">
-        <img src="/assets/logo.png" alt="Phudu Logo" className="h-8 mr-2" />
+        <img src="/src/assets/logo.png" alt="Phudu Logo" className="h-8 mr-2" />
         <span className="text-xl font-bold text-blue-600">Phudu</span>
       </Link>
       <div className="space-x-4">

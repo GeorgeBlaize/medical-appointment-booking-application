@@ -1,16 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import doctorsData from '../data/doctors.json'; // Direct import
 import DoctorCard from '../components/DoctorCard';
 import SuccessCard from '../components/SuccessCard';
 
 export default function Home() {
-  const [doctors, setDoctors] = useState([]);
+  const [doctors] = useState(doctorsData); // No fetch needed
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-
-  useEffect(() => {
-    fetch('/data/doctors.json')
-      .then(res => res.json())
-      .then(data => setDoctors(data));
-  }, []);
 
   return (
     <div className="min-h-screen bg-gray-100">

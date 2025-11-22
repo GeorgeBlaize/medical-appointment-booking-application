@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Cameron Williamson",
+    "education": "MBBS, MD",
+    "speciality": "General Medicine, DNB",
+    "experience": "5+ Years Experience",
+    "regNo": "BD1245154",
+    "image": "/src/assets/doctor-sample.png",
+    "workplace": "TMSS Medical College & Rafatullah Community Hospital, Bogura",
+    "fee": "950 Taka + Vat",
+    "availability": ["Sunday", "Monday", "Thursday"]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Natasha Karim",
+    "education": "MBBS, FCPS",
+    "speciality": "Dermatology & Skin Care",
+    "experience": "7+ Years Experience",
+    "regNo": "BD1567843",
+    "image": "/assets/doctor1.jpg",
+    "workplace": "Square Hospital, Dhaka",
+    "fee": "1100 Taka + Vat",
+    "availability": ["Saturday", "Tuesday", "Wednesday"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Jonathan Ahmed",
+    "education": "MBBS, MS (Cardiology)",
+    "speciality": "Cardiology",
+    "experience": "10+ Years Experience",
+    "regNo": "BD1984521",
+    "image": "/assets/doctor2.jpg",
+    "workplace": "National Heart Foundation, Dhaka",
+    "fee": "1500 Taka + Vat",
+    "availability": ["Sunday", "Monday", "Friday"]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Sophia Rahman",
+    "education": "MBBS, DGO",
+    "speciality": "Gynecology & Obstetrics",
+    "experience": "6+ Years Experience",
+    "regNo": "BD1348795",
+    "image": "/assets/doctor3.jpg",
+    "workplace": "Ibn Sina Hospital, Dhanmondi",
+    "fee": "1200 Taka + Vat",
+    "availability": ["Monday", "Wednesday", "Thursday"]
+  },
+  {
+    "id": 5,
+    "name": "Dr. Mahmud Hasan",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedic Surgery",
+    "experience": "8+ Years Experience",
+    "regNo": "BD1754682",
+    "image": "/assets/doctor4.jpg",
+    "workplace": "United Hospital, Gulshan",
+    "fee": "1300 Taka + Vat",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Asma Chowdhury",
+    "education": "MBBS, FCPS (Pediatrics)",
+    "speciality": "Child Specialist",
+    "experience": "9+ Years Experience",
+    "regNo": "BD1654328",
+    "image": "/assets/doctor5.jpg",
+    "workplace": "Dhaka Shishu Hospital",
+    "fee": "1000 Taka + Vat",
+    "availability": ["Saturday", "Monday", "Wednesday"]
+  },
+  {
+    "id": 7,
+    "name": "Dr. Tareq Islam",
+    "education": "MBBS, MD (Neurology)",
+    "speciality": "Neurologist",
+    "experience": "12+ Years Experience",
+    "regNo": "BD1287964",
+    "image": "/assets/doctor6.jpg",
+    "workplace": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+    "fee": "1600 Taka + Vat",
+    "availability": ["Tuesday", "Thursday", "Friday"]
+  },
+  {
+    "id": 8,
+    "name": "Dr. Farhana Nabila",
+    "education": "MBBS, FCPS (ENT)",
+    "speciality": "ENT Specialist",
+    "experience": "6+ Years Experience",
+    "regNo": "BD1934756",
+    "image": "/assets/doctor7.jpg",
+    "workplace": "Popular Diagnostic Center, Uttara",
+    "fee": "900 Taka + Vat",
+    "availability": ["Sunday", "Wednesday", "Thursday"]
+  },
+  {
+    "id": 9,
+    "name": "Dr. Imran Siddique",
+    "education": "MBBS, FCPS (Surgery)",
+    "speciality": "General & Laparoscopic Surgery",
+    "experience": "11+ Years Experience",
+    "regNo": "BD1425987",
+    "image": "/assets/doctor8.jpg",
+    "workplace": "Evercare Hospital, Dhaka",
+    "fee": "1400 Taka + Vat",
+    "availability": ["Saturday", "Tuesday", "Friday"]
+  },
+  {
+    "id": 10,
+    "name": "Dr. Nusrat Jahan",
+    "education": "MBBS, MD (Psychiatry)",
+    "speciality": "Psychiatrist",
+    "experience": "4+ Years Experience",
+    "regNo": "BD1876543",
+    "image": "/assets/doctor9.jpg",
+    "workplace": "Bangladesh Medical College Hospital",
+    "fee": "850 Taka + Vat",
+    "availability": ["Monday", "Thursday", "Friday"]
+  }
+]

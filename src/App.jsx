@@ -8,11 +8,11 @@ import DoctorDetails from './pages/DoctorDetails';
 import Bookings from './pages/Bookings';
 import Blogs from './pages/Blogs';
 import Error from './pages/Error';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import './App.css';
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <Suspense fallback={<div className="flex justify-center items-center h-screen"><ClipLoader color="#36d7b7" /></div>}>
